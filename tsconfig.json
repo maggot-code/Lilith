@@ -1,0 +1,64 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "sourceMap": true,
+        "jsx": "preserve",
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
+        "allowJs": false,
+        "strict": true,
+        "noLib": false,
+        "noEmitOnError": true,
+        "noUnusedLocals": true,
+        "noImplicitAny": false,
+        "experimentalDecorators": true, // 注解
+        "useDefineForClassFields": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "removeComments": true,
+        "declaration": true,
+        "declarationMap": false,
+        "suppressImplicitAnyIndexErrors": true,
+        "forceConsistentCasingInFileNames": true,
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "typeRoots": [
+            "./node_modules/@types/",
+            "./types"
+        ],
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "@b/*": [
+                "build/*"
+            ],
+            "@p/*": [
+                "packages/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "packages/**/*.ts",
+        "packages/**/*.d.ts",
+        "packages/**/*.tsx",
+        "packages/**/*.vue",
+        "build/**/*.d.ts",
+        "build/**/*.ts",
+        "vite.config.ts",
+        "types/env.d.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+    ]
+}
